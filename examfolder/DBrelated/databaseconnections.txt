@@ -1,0 +1,13 @@
+//to create role with superuser
+CREATE ROLE director SUPERUSER LOGIN PASSWORD 'chlp';
+
+//to create database
+CREATE DATABASE carsDB;
+
+//to create table 
+CREATE TABLE carstb(
+    id BIGSERIAL PRIMARY KEY,
+    mark VARCHAR(100) NOT NULL,
+    model VARCHAR(100) NOT NULL,
+    cost MONEY NOT NULL
+);
